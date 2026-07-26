@@ -1,7 +1,25 @@
 aid: deliverr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/deliverr.png
 name: Deliverr
-description: Deliverr is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Deliverr was an e-commerce fulfillment company founded in 2017 (Harish Abbott and Michael
+  Krakaris) that offered fast, affordable outbound fulfillment for online sellers across marketplaces such
+  as Shopify, Amazon, Walmart, eBay, and Wish, backed by 8vc and other investors. Shopify acquired Deliverr
+  in 2022 and folded it into Shopify Logistics / the Shopify Fulfillment Network; in 2023 Shopify sold that
+  logistics business to Flexport. Deliverr no longer operates as an independent company and publishes no
+  standalone developer portal or API — its former domain (deliverr.com) now redirects to flexport.com, and
+  its fulfillment capabilities live inside Flexport's platform. This profile is retained as a historical
+  network stub; there is no live Deliverr API surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/deliverr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,20 @@ x-backed-by:
 - 8vc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Flexport
+x-successor-url: https://www.flexport.com
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Logistics
+- Fulfillment
+- Ecommerce
+- Shipping
+- Supply Chain
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,8 @@ maintainers:
 common:
 - type: Website
   url: https://deliverr.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
